@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JigTok</title>
+</head>
+<body>
+
+<video id="myVideo" width="400" controls>
+  <source src="bigbugbunny.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<script>
+document.getElementById('myVideo').addEventListener('loadedmetadata', function() {
+  // Set the number of pieces
+  const numPieces = 4;
+
+  // Get the video element
+  const video = this;
+
+  // Calculate the width of each piece
+  const pieceWidth = video.videoWidth / numPieces;
+
+  // Calculate the middle point of the video timeframe
+  const middlePoint = video.duration / 2;
+
+  // Create a canvas element for drawing
+  const canvas = document.createElement('canvas');
+  const context = canvas.getContext('2d');
+
+  // Set canvas dimensions to match the size of each piece
+  canvas.width = pieceWidth;
+  canvas.height = video.videoHeight;
+
+  // Move the video to the middle of the timeframe
+  video.currentTime = middlePoint;
+
+      // Crop the video into pieces
+  for (let i = 0; i < numPieces; i++) {
+    // Draw each piece onto the canvas
+    context.drawImage(video, i * pieceWidth, 0, pieceWidth, video.videoHeight, 0, 0, pieceWidth, video.videoHeight);
+
+    // Create a new video element for each piece
+    const pieceVideo = document.createElement('video');
+    pieceVideo.width = pieceWidth;
+    pieceVideo.src = canvas.toDataURL('image/webp');
+    pieceVideo.controls = true;
+
+    document.body.appendChild(pieceVideo);
+  }
+
+  
+});
+</script>
+
+</body>
+</html>

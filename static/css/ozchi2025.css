@@ -1,0 +1,242 @@
+:root {
+    --bg-col: white;
+    --text-col: #333;
+    --accent-text-col: #c54337;
+    --accent-col: #E64626;
+    --light-accent-col: #ff8971;
+    --gradient-col: rgb(255, 203, 157);
+    --nav-col: rgb(255, 237, 208);
+    --light-nav-col: rgb(255, 244, 227);
+    --clip-length: 25px;
+    --clip: polygon(0 0, calc(100% - var(--clip-length)) 0, 100% 100%, 0 100%);
+    --box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+@font-face {
+    font-family: "Didact Gothic";
+    src: url(DidactGothic-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Gabarito";
+    src: url(Gabarito-VariableFont_wght.ttf);
+}
+
+/* Utility */
+.accent {
+    background-color: var(--accent-col);
+    color: white;
+}
+
+.accent-text {
+    color: var(--accent-text-col);
+}
+
+.large {
+    font-size: 110%;
+}
+
+.medium {
+    font-size: 11pt;
+}
+
+.nav-accent {
+    background-color: var(--nav-col);
+    color: var(--accent-text-col);
+}
+
+.clip {
+	clip-path: polygon(0 0, calc(100% - 30px) 0, 100% 100%, 0 100%);
+}
+
+.link-group {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+/* Bootstrap overrides */
+.table {
+    border: 2px solid var(--accent-col);
+}
+
+.table-striped tbody tr:nth-of-type(2n+1) {
+    background-color: var(--light-nav-col);
+}
+
+.rounded {
+    overflow: hidden;
+}
+
+#main-nav .container {
+    margin-top: 0;
+}
+
+main.container {
+    margin-top: 2rem;
+}
+
+.mw-400 {
+    max-width: 400px;
+}
+
+.mw-500 {
+    max-width: 500px;
+}
+
+nav {
+    box-shadow: var(--box-shadow);
+    font-size: 12pt;
+}
+
+nav, .navbar-light {
+    background-color: var(--nav-col);
+    background-image: linear-gradient(135deg, var(--light-nav-col), var(--nav-col));
+    /* border-bottom: 6px solid var(--light-accent-col); */
+}
+
+.navbar-brand {
+    padding-top: 0;    
+}
+
+.navbar-brand-title {
+    text-transform: uppercase;
+    color: var(--accent-col);
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    width: 0;
+    font-size: 18pt;
+    margin-left: 0.2rem;
+    transition: 0.2s all ease-in-out;
+}
+
+@media (prefers-reduced-motion) {
+    .navbar-brand-title{ width: 100%; }
+}
+
+.navbar-brand:hover .navbar-brand-title {
+    width: 100%;
+}
+
+nav .dropdown-menu {
+    background-color: var(--light-nav-col);
+}
+
+.dropdown-menu {
+    padding: 0;
+}
+
+.dropdown-item {
+    padding: 0.5rem 1.5rem;
+    transition: 0.1s all linear;
+}
+
+nav .dropdown-item:hover {
+    background-color: var(--accent-col);
+    color: white;
+}
+
+/* Main */
+
+body {
+    font-size: 13pt;
+    line-height: 1.8em;
+    font-family: "Didact Gothic", sans-serif;
+    background-color: var(--bg-col);
+    color: var(--text-col);
+}
+
+p {
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Gabarito", sans-serif;
+}
+
+.sidebar-wrapper {
+  display: flex;
+  flex-direction: column;
+  border-right: 3px solid var(--light-accent-col);
+}
+
+.sidebar-cap {
+    background-color: var(--nav-col);
+    height: var(--clip-length);
+    clip-path: polygon(var(--clip-length) 0%, 100% 0%, 100% 100%, 0% 100%, 0% var(--clip-length));
+    margin-bottom: -1px;
+}
+   
+.sidebar {
+    flex-grow: 1;
+    background-image: linear-gradient(0deg, var(--bg-col), var(--nav-col));
+}
+
+.banner-back {
+background: linear-gradient(0deg, #A9C2BD 10%, rgba(255,203,157,0.7)), url("../images/venue/dan-freeman-sydney-tint.jpg") no-repeat center;
+background-size: cover;
+background-position: center;
+margin-bottom: 2rem;
+overflow: hidden;
+}
+
+.banner-image-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.banner-image {
+    width: 40%;
+    margin-left: 13vw;
+    min-width: 500px;
+    /* width: 600px; */
+}
+
+.banner-back h2 {
+font-weight: 600;
+color: black;
+font-family: "Gabarito", sans-serif;
+}
+
+.content h1, .content h2, .content h3 {
+    color: var(--accent-text-col);
+}
+
+.content h2, .content h3 {
+    padding-bottom: 0.1em;
+    border-bottom: 3px solid var(--light-accent-col);
+    /* margin-right: 2rem; */
+    transition: 0.2s all ease-in-out;
+    margin-left: -0.5rem;
+}
+
+.content h2:hover, .content h3:hover {
+    margin-right: 0;
+}
+
+.spacer {
+    height: 1rem;
+}
+
+body a {
+    color: var(--accent-col);
+}
+
+footer {
+    /* background-color: var(--light-nav-col); */
+    background-image: linear-gradient(var(--light-nav-col), var(--nav-col));
+    margin-top: 4rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .banner-back h2 {
+    font-size: 120%;
+    }
+}

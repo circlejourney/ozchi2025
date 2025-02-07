@@ -1,0 +1,10 @@
+        <div class="chair-col col-lg-4 col-6">
+          <div class="chair-row">
+            <img class="chair-image" src="static/images/people/{NAME}.jpg">
+            <div class="chair-right">
+              <h3 class="chair-name">{NAME}</h3>
+              <div class="chair-institution">{INSTITUTION}</div>
+              <div class="chair-role">{CHAIR} Chair</div>
+            </div>
+          </div>
+        </div>
