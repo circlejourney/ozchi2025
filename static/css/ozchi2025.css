@@ -7,6 +7,7 @@
     --gradient-col: rgb(255, 203, 157);
     --nav-col: rgb(255, 237, 208);
     --light-nav-col: rgb(255, 244, 227);
+    --off-white: rgb(248, 246, 242);
     --clip-length: 25px;
     --clip: polygon(0 0, calc(100% - var(--clip-length)) 0, 100% 100%, 0 100%);
     --box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
@@ -53,7 +54,7 @@
     list-style-type: none;
     padding: 0;
     margin: 0;
-  }
+}
 
 /* Bootstrap overrides */
 .table {
@@ -73,7 +74,7 @@
 }
 
 main.container {
-    margin-top: 2rem;
+    margin: 3rem auto;
 }
 
 .mw-400 {
@@ -137,14 +138,36 @@ nav .dropdown-item:hover {
     color: white;
 }
 
+.nav-socials {
+	font-size: 14pt;
+	margin-left: 0.25rem;
+	display: flex;
+	gap: 0.25rem;
+	align-items: center;
+	justify-content: flex-end;
+}
+
 /* Main */
 
 body {
     font-size: 13pt;
     line-height: 1.8em;
     font-family: "Didact Gothic", sans-serif;
-    background-color: var(--bg-col);
+    /* background-color: var(--bg-col); */
+    background: linear-gradient(90deg, var(--off-white), var(--bg-col) 10%, var(--bg-col) 90%, var(--off-white));
     color: var(--text-col);
+}
+
+.breadcrumbs {
+    text-align: center;
+    font-size: 11pt;
+    opacity: 0.8;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+}
+
+.breadcrumbs a {
+    display: inline-block;
 }
 
 p {
@@ -238,5 +261,8 @@ footer {
 @media only screen and (max-width: 768px) {
     .banner-back h2 {
     font-size: 120%;
+    }
+    .link-group li {
+        display: inline;
     }
 }

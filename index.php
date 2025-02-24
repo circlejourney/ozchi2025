@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <?php include("nav.html"); ?>
+  <?php include("html/nav.html"); ?>
 
 
   <!-- User Overrides -->
@@ -18,7 +18,7 @@
   <div class="banner-back">
     <div class="row header p-5">
       <div class="p-1 mx-auto text-center col-md-9 col-sm-12">
-        <img class="logo mw-400" src="static/images/OzCHI2025_COLOR_LOGO ONLY.svg">
+        <img class="logo mw-400" src="static/images/OzCHI2025_COLOR_LOGO ONLY.svg" alt="OzCHI 2025 logo">
         <h2>
           <span class="accent-text">OzCHI 2025: Generative Intelligences, Planetary Futures</span><br>
           37th Australian Conference on Human-Computer Interaction (HCI)<br>
@@ -34,7 +34,7 @@
   
   <div class="container content">
     <div class="row">
-      <div class="col-12 col-md-8 px-5">
+      <div class="col-12 col-md-8 px-5 order-2 order-md-1">
         <h2>Welcome to OzCHI 2025</h2>
         <p>OzCHI 2025 is the 37th Australian Conference on Human-Computer Interaction. This annual non-profit event is for
           the Computer-Human Interaction Special Interest Group (CHISIG) and serves as a premier forum for the latest
@@ -47,7 +47,7 @@
           software engineering, human factors, information systems analysis, and social sciences. We welcome and encourage
           international and industry submissions and participation.</p>
         
-        <p class="text-center font-weight-bold nav-accent large">Theme: Generative Intelligences, Planetary Futures</p>
+        <p class="text-center font-weight-bold nav-accent large clip">Theme: Generative Intelligences, Planetary Futures</p>
         <p>This year's conference theme, Generative Intelligences, Planetary Futures, reflects the evolving role of HCI in
           collaborating with emerging intelligent technologies to shape sustainable futures for our planet.</p>
         
@@ -60,7 +60,7 @@
 
         <h2><i class="far fa-file-lines"></i> Submission dates</h2>
 
-        <p>Submission dates are given in Anywhere on Earth (AoE) time zone.</p>
+        <p>Dates are given in Anywhere on Earth (AoE) time zone. The deadline for submission is 11:59 PM AoE on the specified date. You can check the current AoE time <a href="https://time.is/Anywhere_on_Earth">here</a>.</p>
         
         <table class="table table-striped shadow-sm rounded medium">
             <thead class="accent">
@@ -75,6 +75,11 @@
               <td>Long paper</td>
               <td>2 June</td>
               <td>23 July</td>
+            </tr>
+            <tr>
+              <td>Provocations</td>
+              <td>4 August</td>
+              <td>25 August</td>
             </tr>
             <tr>
               <td>Late-Breaking Work</td>
@@ -93,7 +98,7 @@
             </tr>
             <tr>
               <td>Demonstrations</td>
-              <td>19 August</td>
+              <td>18 August</td>
               <td>17 September</td>
             </tr>
             <tr>
@@ -105,10 +110,10 @@
         </table>
       </div>
 
-      <div class="col text-center p-0 sidebar-wrapper">
+      <div class="col text-center sidebar-wrapper order-1 order-md-2 p-0 mx-2 mx-md-0">
         <div class="sidebar-cap">
         </div>
-        <div class="sidebar py-4">
+        <div class="sidebar pb-4 pt-md-4">
           <p class="large accent-text">Tag your posts with <b>#OzCHI2025</b>!</p>
           
           <div class="spacer"></div>
@@ -123,6 +128,9 @@
 					</li>
 					<li>
 						<a href="https://www.threads.net/@ozchi_conf"><i class="fa-brands fa-threads"></i> Threads</a>
+					</li>
+					<li>
+						<a href="https://bsky.app/profile/ozchi-conf.bsky.social"><i class="fa-brands fa-bluesky"></i> Bluesky</a>
 					</li>
 				</ul>
         <div class="spacer"></div>
