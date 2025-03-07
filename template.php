@@ -10,104 +10,20 @@
 
 
   <!-- User Overrides -->
-
-  <style>
-
-    .committee {
-      justify-content: center;
-    }
-
-    .chair-row {
-      /* background: #eee; */
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.3rem 0.6rem 0.3rem 0.3rem;
-    }
-
-    .chair-header {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      text-align: center;
-      margin-top: 1rem;
-    }
-
-    .chair-header h3 {
-      width: 100%;
-      border: none;;
-      background-color: var(--nav-col);
-      color: var(--accent-text-col);
-      padding: 0.25rem;
-      font-size: 105%;
-      margin: 0 auto;
-      clip-path: var(--clip);
-      padding-right: 25px;
-    }
-
-    .chair-header h3::after {
-      display: inline;
-      content: " ▼";
-    }
-
-    .chair-email {
-      font-size: 90%;
-      opacity: 0.8;
-    }
-
-    .chair-col {
-        margin-top: 1rem;
-    }
-
-    @media only screen and (max-width: 768px) {
-      .chair-row{
-        flex-wrap: wrap;
-      }
-      .chair-header {
-        flex-basis: 100%;
-        max-width: none;
-        text-align: center;
-      }
-    }
-
-    .chair-right {
-      flex-grow: 1;
-    }
-
-    .chair-image {
-      width: 180px;
-      height: 180px;
-      border-radius: 100%;
-      object-fit: cover;
-      object-position: top;
-    }
-
-    .chair-institution {
-      font-size: 80%;
-      opacity: 0.9;
-      line-height: 1.2em;
-      text-align: center;
-    }
-
-    .chair-name {
-      text-align: center;
-      font-size: 120%;
-      border: none;
-    }
-    
-  </style>
   
   <main class="container">
     <div class="content">
       <?php if(isset($breadcrumbs)): ?>
-      <div class="breadcrumbs">
-        <a href="./">Home</a> >
+      <div class="breadcrumb">
+        <div class="breadcrumb-item">
+          <a href="./">Home</a>
+        </div>
         <?php foreach($breadcrumbs as $name => $url): ?>
+          <div class="breadcrumb-item">
             <a <?php if(isset($url)): ?>href="<?php echo $url; ?>"<?php endif; ?>>
               <?php echo $name; ?>
             </a>
-            <?php if($name !== array_key_last($breadcrumbs)): ?>><?php endif;?>
+          </div>
         <?php endforeach; ?>
       </div>
       <?php endif; ?>

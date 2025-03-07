@@ -33,7 +33,7 @@
   </div>
   
   <div class="container content">
-    <div class="row">
+    <main class="row">
       <div class="col-12 col-md-8 px-5 order-2 order-md-1">
         <h2>Welcome to OzCHI 2025</h2>
         <p>OzCHI 2025 is the 37th Australian Conference on Human-Computer Interaction. This annual non-profit event is for
@@ -47,7 +47,7 @@
           software engineering, human factors, information systems analysis, and social sciences. We welcome and encourage
           international and industry submissions and participation.</p>
         
-        <p class="text-center font-weight-bold nav-accent large clip">Theme: Generative Intelligences, Planetary Futures</p>
+        <p class="text-center font-weight-bold nav-accent large">Theme: Generative Intelligences, Planetary Futures</p>
         <p>This year's conference theme, Generative Intelligences, Planetary Futures, reflects the evolving role of HCI in
           collaborating with emerging intelligent technologies to shape sustainable futures for our planet.</p>
         
@@ -72,17 +72,17 @@
             </thead>
             <tbody>
             <tr>
-              <td>Long paper</td>
+              <td><a href="papers-lbw.php">Long paper</a></td>
               <td>2 June</td>
               <td>23 July</td>
             </tr>
             <tr>
-              <td>Provocations</td>
+              <td><a href="provocations.php">Provocations</a></td>
               <td>4 August</td>
               <td>25 August</td>
             </tr>
             <tr>
-              <td>Late-Breaking Work</td>
+              <td><a href="papers-lbw.php">Late-Breaking Work</a></td>
               <td>4 August</td>
               <td>24 September</td>
             </tr>
@@ -92,12 +92,12 @@
               <td>13 August</td>
             </tr>
             <tr>
-              <td>Doctoral Consortium</td>
+              <td><a href="dc.php">Doctoral Consortium</a></td>
               <td>18 August</td>
               <td>17 September</td>
             </tr>
             <tr>
-              <td>Demonstrations</td>
+              <td><a href="demos.php">Demonstrations</a></td>
               <td>18 August</td>
               <td>17 September</td>
             </tr>
@@ -140,11 +140,11 @@
         </p>
         </div>
       </div>
-    </div>
+    </main>
   </div>
 
     <!-- Footer -->
-    <?php include("footer.html")?>
+    <?php include("html/footer.html")?>
 
     <!-- Code for hash tags -->
     <script type="text/javascript">

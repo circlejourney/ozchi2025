@@ -1,13 +1,101 @@
+
+
+<style>
+
+    .committee {
+      justify-content: center;
+    }
+
+    .chair-row {
+      /* background: #eee; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.3rem 0.6rem 0.3rem 0.3rem;
+    }
+
+    .chair-header {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      text-align: center;
+      margin-top: 1rem;
+      padding-right: 0;
+    }
+
+    .chair-header h3 {
+      width: 100%;
+      border: none;;
+      background-color: var(--nav-col);
+      color: var(--accent-text-col);
+      padding: 0.25rem;
+      font-size: 105%;
+      margin: 0 auto;
+      clip-path: var(--clip);
+      padding-right: 25px;
+    }
+
+    .chair-header h3::after {
+      display: inline;
+      content: " ▼";
+    }
+
+    .chair-email {
+      font-size: 85%;
+      line-height: 1.6em;
+    }
+
+    .chair-col {
+        margin-top: 1rem;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .chair-row{
+        flex-wrap: wrap;
+      }
+      .chair-header {
+        flex-basis: 100%;
+        max-width: none;
+        text-align: center;
+      }
+    }
+
+    .chair-right {
+      flex-grow: 1;
+    }
+
+    .chair-image {
+      width: 180px;
+      height: 180px;
+      border-radius: 100%;
+      object-fit: cover;
+      object-position: top;
+    }
+
+    .chair-institution {
+      font-size: 80%;
+      opacity: 0.9;
+      line-height: 1.2em;
+      text-align: center;
+    }
+
+    .chair-name {
+      text-align: center;
+      font-size: 120%;
+      border: none;
+    }
+    
+  </style>
+
 <h1>Organising Committee</h1>
 
 <div class="committee row">
 
-<div class="chair-superrow row col-12 col-md-8">
+<div class="chair-superrow row no-gutters col-12 col-md-8">
     <div class="chair-header col-12">
         <h3>General Chairs</h3>
-        <!-- <div class="chair-email">
-        example@example.com
-        </div> -->
+        <a class="chair-email" href="chair@ozchi.org">chair@ozchi.org</a>
     </div>
 
     <div class="chair-col col">
@@ -33,9 +121,10 @@
     </div>
 </div>
 
-<div class="chair-superrow row col-12 col-md-4">
+<div class="chair-superrow row no-gutters col-12 col-md-4">
     <div class="chair-header col-12">
     <h3>Program Chair</h3>
+    <a class="chair-email" href="chair@ozchi.org">chair@ozchi.org</a>
     </div>
     
 
@@ -51,9 +140,10 @@
 </div>
 </div>
 
-<div class="chair-superrow row col-12">
+<div class="chair-superrow row no-gutters col-12">
     <div class="chair-header col-12">
     <h3>Long Paper Chairs</h3>
+    <a class="chair-email" href="longpapers.chair@ozchi.org">longpapers.chair@ozchi.org</a>
     </div>
 
 <div class="chair-col col">
@@ -90,9 +180,10 @@
 </div>
 </div>
 
-<div class="chair-superrow row col-12">
+<div class="chair-superrow row no-gutters col-12">
     <div class="chair-header col-12">
     <h3>Late-Breaking Work Chairs</h3>
+    <a class="chair-email" href="lbw.chair@ozchi.org">lbw.chair@ozchi.org</a>
     </div>
 
 <div class="chair-col col">
@@ -129,9 +220,10 @@
 </div>
 </div>
 
-<div class="chair-superrow row col-12">
+<div class="chair-superrow row no-gutters col-12">
     <div class="chair-header col-12">
     <h3>Workshop Chairs</h3>
+    <a class="chair-email" href="workshops.chair@ozchi.org">workshops.chair@ozchi.org</a>
     </div>
 
 <div class="chair-col col">
@@ -168,9 +260,10 @@
 </div>
 </div>
 
-<div class="chair-superrow row col-12">
+<div class="chair-superrow row no-gutters col-12">
     <div class="chair-header col-12">
     <h3>Student Design Competition Chairs</h3>
+    <a class="chair-email" href="sdc.chair@ozchi.org">sdc.chair@ozchi.org</a>
     </div>
 
 <div class="chair-col col">
@@ -207,9 +300,10 @@
 </div>
 </div>
 
-<div class="chair-superrow row col-12">
+<div class="chair-superrow row no-gutters col-12">
     <div class="chair-header col-12">
     <h3>Demonstration Chairs</h3>
+    <a class="chair-email" href="demonstrations.chair@ozchi.org">demonstrations.chair@ozchi.org</a>
     </div>
 
 <div class="chair-col col">
@@ -246,9 +340,10 @@
 </div>
 </div>
 
-<div class="chair-superrow row col-12 col-md-6">
+<div class="chair-superrow row no-gutters col-12 col-md-6">
     <div class="chair-header col-12">
     <h3>Doctoral Consortium Chairs</h3>
+    <a class="chair-email" href="dc.chair@ozchi.org">dc.chair@ozchi.org</a>
     </div>
 
 <div class="chair-col col">
@@ -274,9 +369,10 @@
 </div>
 </div>
 
-<div class="chair-superrow row col-12 col-md-6">
+<div class="chair-superrow row no-gutters col-12 col-md-6">
     <div class="chair-header col-12">
     <h3>Provocations Chairs</h3>
+    <a class="chair-email" href="provocations.chair@ozchi.org">provocations.chair@ozchi.org</a>
     </div>
 
 <div class="chair-col col">
@@ -302,9 +398,10 @@
 </div>
 </div>
 
-<div class="chair-superrow row col-12 col-md-6">
+<div class="chair-superrow row no-gutters col-12 col-md-6">
     <div class="chair-header col-12">
     <h3>Web & Social Media Chairs</h3>
+    <a class="chair-email" href="websocial.chair@ozchi.org">websocial.chair@ozchi.org</a>
     </div>
 
 <div class="chair-col col">
@@ -330,9 +427,10 @@
 </div>
 </div>
 
-<div class="chair-superrow row col-12 col-md-6">
+<div class="chair-superrow row no-gutters col-12 col-md-6">
     <div class="chair-header col-12">
     <h3>Student Volunteer Chairs</h3>
+    <a class="chair-email" href="sv.chair@ozchi.org">sv.chair@ozchi.org</a>
     </div>
 
 <div class="chair-col col">
@@ -358,9 +456,10 @@
 </div>
 </div>
 
-<div class="chair-superrow row col-12 col-md-6">
+<div class="chair-superrow row no-gutters col-12 col-md-6">
     <div class="chair-header col-12">
     <h3>Diversity, Equity, Inclusion, & Accessibility Chair</h3>
+    <a class="chair-email" href="deia.chair@ozchi.org">deia.chair@ozchi.org</a>
     </div>
 
 <div class="chair-col col">
@@ -375,9 +474,10 @@
 </div>
 </div>
 
-<div class="chair-superrow row col-12 col-md-6">
+<div class="chair-superrow row no-gutters col-12 col-md-6">
     <div class="chair-header col-12">
     <h3>Happiness / Local Arrangements Chair</h3>
+    <a class="chair-email" href="local.chair@ozchi.org">local.chair@ozchi.org</a>
     </div>
 
 <div class="chair-col col">
@@ -392,9 +492,10 @@
 </div>
 </div>
 
-<div class="chair-superrow row col-12 col-md-6">
+<div class="chair-superrow row no-gutters col-12 col-md-4">
     <div class="chair-header col-12">
     <h3>Industry / Sponsorship Chair</h3>
+    <a class="chair-email" href="industry.chair@ozchi.org">industry.chair@ozchi.org</a>
     </div>
 
 <div class="chair-col col">
@@ -409,9 +510,10 @@
 </div>
 </div>
 
-<div class="chair-superrow row col-12 col-md-6">
+<div class="chair-superrow row no-gutters col-12 col-md-4">
     <div class="chair-header col-12">
-    <h3>Publication Chairs</h3>
+    <h3>Publication Chair</h3>
+    <a class="chair-email" href="proceedings.chair@ozchi.org">proceedings.chair@ozchi.org</a>
     </div>
 
 <div class="chair-col col">
@@ -425,4 +527,24 @@
     </div>
 </div>
 </div>
+
+
+<div class="chair-superrow row no-gutters col-12 col-md-4">
+    <div class="chair-header col-12">
+    <h3>Asia Pacific Engagement Chair</h3>
+    <a class="chair-email" href="ap.chair@ozchi.org">ap.chair@ozchi.org</a>
+    </div>
+
+<div class="chair-col col">
+    <div class="chair-row">
+    <div class="chair-image-wrapper"><img loading="lazy" class="chair-image" src="static/images/people/Khanh-Duy Le.jpg"></div>
+    <div class="chair-right">
+        <h3 class="chair-name">Khanh-Duy Le</h3>
+        <div class="chair-institution">VNUHCM University of Science</div>
+        
+    </div>
+    </div>
+</div>
+</div>
+
 </div>

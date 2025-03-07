@@ -105,20 +105,20 @@ nav, .navbar-light {
     color: var(--accent-col);
     display: inline-block;
     vertical-align: middle;
-    overflow: hidden;
-    width: 0;
+    /* overflow: hidden; */
+    /* width: 0; */
     font-size: 18pt;
     margin-left: 0.2rem;
     transition: 0.2s all ease-in-out;
 }
 
-@media (prefers-reduced-motion) {
+/* @media (prefers-reduced-motion) {
     .navbar-brand-title{ width: 100%; }
-}
+} */
 
-.navbar-brand:hover .navbar-brand-title {
+/* .navbar-brand:hover .navbar-brand-title {
     width: 100%;
-}
+} */
 
 nav .dropdown-menu {
     background-color: var(--light-nav-col);
@@ -158,16 +158,22 @@ body {
     color: var(--text-col);
 }
 
-.breadcrumbs {
+.breadcrumb {
     text-align: center;
     font-size: 11pt;
     opacity: 0.8;
-    margin-bottom: 1rem;
-    padding: 0 1rem;
+    margin-bottom: 1.5rem;
+    padding: 0.25rem 1rem;
+    background-color: var(--light-nav-col);
 }
 
-.breadcrumbs a {
-    display: inline-block;
+.breadcrumb a {
+    display: inline;
+    border: none;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
 }
 
 p {
@@ -181,6 +187,10 @@ h1 {
 
 h1, h2, h3, h4 {
     font-family: "Gabarito", sans-serif;
+}
+
+main a {
+    border-bottom: 1px dotted;
 }
 
 .sidebar-wrapper {
