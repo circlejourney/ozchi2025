@@ -87,7 +87,7 @@
               <td>24 September</td>
             </tr>
             <tr>
-              <td>Workshops</td>
+              <td><a href="workshops.php">Workshops</a></td>
               <td>9 July</td>
               <td>13 August</td>
             </tr>
