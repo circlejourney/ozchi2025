@@ -72,7 +72,7 @@
             </thead>
             <tbody>
             <tr>
-              <td><a href="papers-lbw.php">Long paper</a></td>
+              <td><a href="papers-lbw.php">Long papers</a></td>
               <td>2 June</td>
               <td>23 July</td>
             </tr>
