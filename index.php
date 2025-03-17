@@ -136,7 +136,7 @@
         <div class="spacer"></div>
         <h4>Latest updates</h4>
         <p>
-          <?php include("latest.html") ?>
+          <?php include("html/latest.html") ?>
         </p>
         </div>
       </div>
