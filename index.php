@@ -102,7 +102,7 @@
               <td>17 September</td>
             </tr>
             <tr>
-              <td>Student Design Competition</td>
+              <td><a href="sdc.php">Student Design Challenge</a></td>
               <td>22 September</td>
               <td>10 October</td>
             </tr>
