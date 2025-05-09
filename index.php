@@ -36,6 +36,13 @@
     <main class="row">
       <div class="col-12 col-md-8 px-5 order-2 order-md-1">
         <h2>Welcome to OzCHI 2025</h2>
+
+        <div class="d-flex justify-content-center mt-3 w-100">
+          <video controls width="80%">
+            <source src="static/videos/1 minute promo.mp4">
+          </video>
+        </div>
+
         <p>OzCHI 2025 is the 37th Australian Conference on Human-Computer Interaction. This annual non-profit event is for
           the Computer-Human Interaction Special Interest Group (CHISIG) and serves as a premier forum for the latest
           advancements in HCI research and practice. This year's event will be hosted in Sydney, Australia, from 29
@@ -113,8 +120,15 @@
       <div class="col text-center sidebar-wrapper order-1 order-md-2 p-0 mx-2 mx-md-0">
         <div class="sidebar-cap">
         </div>
-        <div class="sidebar pb-4 pt-md-4">
+        <div class="sidebar pb-4 pt-md-4 px-4">
           <p class="large accent-text">Tag your posts with <b>#OzCHI2025</b>!</p>
+        
+          <div class="spacer"></div>
+
+          <h4>Latest updates</h4>
+          <p class="text-left">
+            <?php include("html/latest.html") ?>
+          </p>
           
           <div class="spacer"></div>
 
@@ -133,11 +147,6 @@
 						<a href="https://bsky.app/profile/ozchi-conf.bsky.social"><i class="fa-brands fa-bluesky"></i> Bluesky</a>
 					</li>
 				</ul>
-        <div class="spacer"></div>
-        <h4>Latest updates</h4>
-        <p>
-          <?php include("html/latest.html") ?>
-        </p>
         </div>
       </div>
     </main>
