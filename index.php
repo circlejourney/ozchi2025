@@ -37,7 +37,7 @@
       <div class="col-12 col-md-8 px-5 order-2 order-md-1">
         <h2>Welcome to OzCHI 2025</h2>
 
-        <div class="d-flex justify-content-center mt-3 w-100">
+        <div class="d-flex justify-content-center mt-3 w-100 bg-dark">
           <video controls width="80%">
             <source src="static/videos/1 minute promo.mp4">
           </video>
