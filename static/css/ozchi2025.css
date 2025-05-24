@@ -268,6 +268,21 @@ footer {
     margin-top: 4rem;
 }
 
+#back-to-top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 30px;
+    background-color: var(--accent-col);
+    color: white;
+    border-radius: 100%;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
 @media only screen and (max-width: 768px) {
     .banner-back h2 {
     font-size: 120%;
