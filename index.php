@@ -80,8 +80,8 @@
             <tbody>
             <tr>
               <td><a href="papers-lbw.php">Long papers</a></td>
-              <td>2 June</td>
-              <td>23 July</td>
+              <td><s>2 June</s> 12 June</td>
+              <td><s>23 July</s> 30 July</td>
             </tr>
             <tr>
               <td><a href="provocations.php">Provocations</a></td>
@@ -95,7 +95,7 @@
             </tr>
             <tr>
               <td><a href="workshops.php">Workshops</a></td>
-              <td>9 July</td>
+              <td><s>9 July</s> 16 July</td>
               <td>13 August</td>
             </tr>
             <tr>
