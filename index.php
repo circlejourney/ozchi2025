@@ -90,7 +90,7 @@
             </tr>
             <tr>
               <td><a href="papers-lbw.php">Late-Breaking Work</a></td>
-              <td>4 August</td>
+              <td><s>4 August</s> 11 August</td>
               <td>24 September</td>
             </tr>
             <tr>
