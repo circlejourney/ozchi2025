@@ -75,6 +75,7 @@
               <th></th>
               <th>Submission</th>
               <th>Notification</th>
+              <th>Camera-ready</th>
             </tr>
             </thead>
             <tbody>
@@ -82,36 +83,43 @@
               <td><a href="papers-lbw.php">Long papers</a></td>
               <td><s>2 June</s> 12 June</td>
               <td><s>23 July</s> 30 July</td>
+              <td>24 September</td>
             </tr>
             <tr>
               <td><a href="provocations.php">Provocations</a></td>
               <td>4 August</td>
               <td>25 August</td>
+              <td>-</td>
             </tr>
             <tr>
               <td><a href="papers-lbw.php">Late-Breaking Work</a></td>
               <td><s>4 August</s> 11 August</td>
               <td>24 September</td>
+              <td>3 October</td>
             </tr>
             <tr>
               <td><a href="workshops.php">Workshops</a></td>
               <td><s>9 July</s> 16 July</td>
               <td>13 August</td>
+              <td>24 September</td>
             </tr>
             <tr>
               <td><a href="dc.php">Doctoral Consortium</a></td>
               <td>18 August</td>
               <td>17 September</td>
+              <td>-</td>
             </tr>
             <tr>
               <td><a href="demos.php">Demonstrations</a></td>
               <td>18 August</td>
               <td>17 September</td>
+              <td>-</td>
             </tr>
             <tr>
               <td><a href="sdc.php">Student Design Challenge</a></td>
               <td>22 September</td>
               <td>10 October</td>
+              <td>-</td>
             </tr>
           </tbody>
         </table>
