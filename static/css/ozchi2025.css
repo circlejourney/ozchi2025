@@ -33,6 +33,14 @@
     color: var(--accent-text-col);
 }
 
+.bg-off-white {
+    background-color: var(--off-white);
+}
+
+.bg-light {
+    background-color: var(--light-nav-col) !important;
+}
+
 .large {
     font-size: 110%;
 }
@@ -110,6 +118,14 @@ nav, .navbar-light {
     font-size: 18pt;
     margin-left: 0.2rem;
     transition: 0.2s all ease-in-out;
+}
+
+.list-group-item {
+    padding: 0.5rem;
+}
+
+.list-group-item:nth-child(odd) {
+    background-color: var(--off-white);
 }
 
 /* @media (prefers-reduced-motion) {
