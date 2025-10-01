@@ -1,0 +1,17 @@
+<h1>Accommodation</h1>
+
+<iframe frameborder="none" id="searchWidget" scrolling="yes" src="https://book.holidaybeds.au/hotelwidget.php?id=MTE=" width="100%"></iframe>
+<script>
+    window.addEventListener('message', function (e) {
+        var $iframe = jQuery("#searchWidget");
+        var eventName = e.data[0];
+        var height = e.data[1];
+        var width = e.data[2];
+        switch (eventName) {
+            case 'setHeight':
+                $iframe.height(height);
+                $iframe.width(width);
+                break;
+        }
+    }, false);
+</script>

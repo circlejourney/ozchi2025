@@ -1,6 +1,7 @@
 :root {
     --bg-col: white;
     --text-col: #333;
+    --muted-col: #6e625f;
     --accent-text-col: #c54337;
     --accent-col: #E64626;
     --light-accent-col: #ff8971;
@@ -163,17 +164,6 @@ nav .dropdown-item:hover {
 	justify-content: flex-end;
 }
 
-/* Main */
-
-body {
-    font-size: 13pt;
-    line-height: 1.8em;
-    font-family: "Didact Gothic", sans-serif;
-    /* background-color: var(--bg-col); */
-    background: linear-gradient(90deg, var(--off-white), var(--bg-col) 10%, var(--bg-col) 90%, var(--off-white));
-    color: var(--text-col);
-}
-
 .breadcrumb {
     text-align: center;
     font-size: 11pt;
@@ -190,6 +180,25 @@ body {
 
 .breadcrumb-item + .breadcrumb-item::before {
     content: ">";
+}
+
+.text-muted {
+    color: var(--muted-col) !important;
+}
+
+/* Main */
+
+body {
+    font-size: 13pt;
+    line-height: 1.8em;
+    font-family: "Didact Gothic", sans-serif;
+    /* background-color: var(--bg-col); */
+    background: linear-gradient(90deg, var(--off-white), var(--bg-col) 10%, var(--bg-col) 90%, var(--off-white));
+    color: var(--text-col);
+}
+
+iframe {
+    border: none;
 }
 
 p {
@@ -280,8 +289,9 @@ body a {
 
 footer {
     /* background-color: var(--light-nav-col); */
-    background-image: linear-gradient(var(--light-nav-col), var(--nav-col));
+    background-image: linear-gradient(transparent, var(--nav-col));
     margin-top: 4rem;
+    padding-top: 10rem;
 }
 
 .logo-row {
