@@ -49,6 +49,15 @@
             $(window).scrollTop(position);
           }
         });
+		$(".scroll-link").on("click", function(e) {
+			e.preventDefault();
+            const {top} = $($(this).attr("href")).position();
+            scrollTo({
+				"top": top - 60,
+				"left": 0,
+				"behavior": "smooth"
+			});
+		})
       });
     </script>
     <!--    <script src="static/js/modules/lazyLoad.js"></script>-->

@@ -78,6 +78,10 @@
     overflow: hidden;
 }
 
+.rounded.table-responsive {
+	overflow: auto;
+}
+
 #main-nav .container {
     margin-top: 0;
 }
