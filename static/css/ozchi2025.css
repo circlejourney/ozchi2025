@@ -25,6 +25,12 @@
 }
 
 /* Utility */
+@media not screen {
+    .screen-only {
+        display: none;
+    }
+}
+
 .accent {
     background-color: var(--accent-col);
     color: white;
