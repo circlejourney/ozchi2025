@@ -53,7 +53,7 @@
 			e.preventDefault();
             const {top} = $($(this).attr("href")).position();
             scrollTo({
-				"top": top - 60,
+				"top": top - 90,
 				"left": 0,
 				"behavior": "smooth"
 			});
