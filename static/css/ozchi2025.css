@@ -2,6 +2,8 @@
     --bg-col: white;
     --text-col: #333;
     --muted-col: #6e625f;
+    --faded-col: #ffe2da;
+    --light-col: #dee2e6;
     --accent-text-col: #c54337;
     --accent-col: #E64626;
     --light-accent-col: #ff8971;
@@ -27,13 +29,19 @@
 /* Utility */
 @media not screen {
     .screen-only {
-        display: none;
+        display: none !important;
     }
 }
 
 .accent {
     background-color: var(--accent-col);
     color: white;
+}
+
+@media only print {
+    .accent {
+        color: var(--accent-col);
+    }
 }
 
 .accent-text {
@@ -46,6 +54,14 @@
 
 .bg-light {
     background-color: var(--light-nav-col) !important;
+}
+
+.border-light {
+    border: 1px solid var(--light-col);
+}
+
+.border-accent {
+    border: 1px solid var(--accent-col) !important;
 }
 
 .large {
@@ -72,8 +88,20 @@
 }
 
 /* Bootstrap overrides */
+.btn-primary {
+    background-color: var(--accent-col);
+    border: none;
+}
+.btn-primary:hover {
+    background-color: var(--accent-text-col);
+}
+
 .table {
     border: 2px solid var(--accent-col);
+}
+
+.table-light-border {
+    border: 2px solid var(--faded-col);
 }
 
 .table-striped tbody tr:nth-of-type(2n+1) {
@@ -331,6 +359,15 @@ footer {
     height: 40px;
     display: flex;
     justify-content: center;
+}
+.workshop-number {
+    font-family: Gabarito, sans-serif;
+    color: var(--muted-col);
+    font-weight: medium;
+    display: block;
+    float: left;
+    font-size: 20pt;
+    margin-right: 10px;
 }
 
 @media only screen and (max-width: 768px) {

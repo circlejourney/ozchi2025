@@ -1,0 +1,188 @@
+<style type="text/css">
+    .program, .workshops {
+        border: none;
+        max-width: 100%;
+        overflow: auto;
+    }
+
+    @media only print {
+        .program {
+            border: 3px solid var(--faded-col);
+        }
+    }
+
+    .gap {
+        background-color: var(--off-white);
+    }
+
+    .workshops td {
+        border: 1px solid var(--light-col);
+    }
+
+    .workshop-time {
+        background-color: var(--faded-col);
+    }
+
+    .program td, .workshops td{
+        vertical-align: top;
+    }
+
+    .program td:first-child {
+        border-right: none;
+    }
+    .program td:nth-child(2) {
+        border-left: none;
+    }
+
+    .program .refreshment, .workshops .refreshment{
+        background-color: #93C47D;
+        border: 3px solid #93C47D;
+        font-weight: bold;
+    }
+
+    .program .session, .workshops .session{
+        background-color: #D9D2E9;
+        font-weight: bold;   
+        border-top: 2px solid #D9D2E9;
+    }
+
+    .program .session-middle, .program .session-end, .workshops .session-middle, .program .session-end{
+        background-color: #f7f1ff;
+    }
+
+    .program .session:nth-child(1),
+    .program .session-middle:nth-child(1),
+    .program .session-end:nth-child(1), .workshops .session-end:nth-child(1){
+        border-left: 3px solid #D9D2E9;
+    }
+
+    .program .session:nth-child(2),
+    .program .session-middle:nth-child(2),
+    .program .session-end:nth-child(2), .workshops .session-end:nth-child(2){
+        border-right: 3px solid #D9D2E9;
+    }
+
+    .program .session-end, .workshops .session-end{
+        border-bottom: 3px solid #D9D2E9;
+    }
+
+    .program .keynote, .workshops .keynote{
+        background-color: #F6B26B;
+        border: 3px solid #F6B26B;
+        font-weight: bold;   
+    }
+
+    .program .day-header, .workshops .day-header{
+        text-align: center;
+        font-family: Gabarito, sans-serif;
+        text-transform: uppercase;
+        font-size: 14pt;
+        border: 3px solid var(--accent-col);
+    }
+
+    .program .time, .workshops .time{
+        text-align: right;
+        
+    }
+    
+    .program .sdc, .workshops .sdc{
+        font-weight: bold;
+        background-color: #fff2cc;
+        border: 3px solid #fff2cc;
+    }
+    
+    .program .provocations, .workshops .provocations{
+        font-weight: bold;
+        background-color: #cfe2f3;
+        border: 3px solid #cfe2f3;
+    }
+
+    .program .day-header accent, .workshops .day-header accent{
+        font-weight: bold;
+        
+        
+        background-color: var(--faded-col);
+    }
+
+    .program .time, .workshops .time{
+        text-align: right;
+        
+    }
+
+    .program .showcase, .workshops .showcase{
+        background-color: #CFE2F3;
+        border: 3px solid #CFE2F3;
+        font-weight: bold;
+    }
+
+    .program .lbw, .workshops .lbw{
+        background-color: #E6B8AF;
+        border: 3px solid #E6B8AF;
+        font-weight: bold;
+    }
+
+    .program .event, .workshops .event{
+        background-color: #FBBC04;
+        border: 3px solid #FBBC04;
+        font-weight: bold;
+    }
+</style>
+
+<h1>Program</h1>
+<p>OzCHI 2025 will take place over five days.</p>
+
+<table class="table text-center">
+    <colgroup>
+        <col style="width: 20%"></col>
+        <col style="width: 20%"></col>
+        <col style="width: 20%"></col>
+        <col style="width: 20%"></col>
+        <col style="width: 20%"></col>
+    </colgroup>
+    <thead>
+        <tr>
+            <th class="bg-light border-accent">Saturday
+                <br>
+                <span class="medium text-muted">29 November</span>
+            </th>
+            <th class="bg-light border-accent">Sunday<br>
+                <span class="medium text-muted">30 November</span>
+            </th>
+            <th class="bg-light border-accent">Monday<br>
+                <span class="medium text-muted">1 December</span>
+            </th>
+            <th class="bg-light border-accent">Tuesday<br>
+                <span class="medium text-muted">2 December</span>
+            </th>
+            <th class="bg-light border-accent">Wednesday<br>
+                <span class="medium text-muted">3 December</span>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="border-accent" colspan="2">Workshops</td>
+            <td class="border-accent" colspan="3">Main conference</td>
+        </tr>
+        <tr>
+            <td class="gap"></td>
+            <td class="border-accent">Doctoral Consortium</td>
+            <td colspan="3" class="gap"></td>
+        </tr>
+    </tbody>
+</table>
+
+<p id="top">
+    The full conference schedule can be found below.
+</p>
+<div class="screen-only flex-wrap pb-2 px-2 d-flex" style="position: sticky; top: 60px; padding-top: 15px; z-index: 3; gap: .5rem; background-color: rgba(255, 255, 255, 0.5);">
+    <a href="#top" class="btn btn-sm btn-primary scroll-link">
+        <i class="fa fa-arrow-up"></i>
+        Back to top
+    </a>
+    <a href="#saturday" class="btn btn-sm btn-primary scroll-link">Saturday</a>
+    <a href="#sunday" class="btn btn-sm btn-primary scroll-link">Sunday</a>
+    <a href="#monday" class="btn btn-sm btn-primary scroll-link">Monday</a>
+    <a href="#tuesday" class="btn btn-sm btn-primary scroll-link">Tuesday</a>
+    <a href="#wednesday" class="btn btn-sm btn-primary scroll-link">Wednesday</a>
+</div>
