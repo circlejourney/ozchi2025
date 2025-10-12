@@ -2,7 +2,7 @@
     --bg-col: white;
     --text-col: #333;
     --muted-col: #6e625f;
-    --faded-col: #ffe2da;
+    --faded-col: #ffe9da;
     --light-col: #dee2e6;
     --accent-text-col: #c54337;
     --accent-col: #E64626;
@@ -54,6 +54,10 @@
 
 .bg-light {
     background-color: var(--light-nav-col) !important;
+}
+
+.bg-faded {
+    background-color: var(--faded-col);
 }
 
 .border-light {
@@ -222,6 +226,10 @@ nav .dropdown-item:hover {
 
 .text-muted {
     color: var(--muted-col) !important;
+}
+
+.text-accent {
+    color: var(--accent-text-col);
 }
 
 /* Main */
