@@ -14,7 +14,7 @@
   <main class="container">
     <div class="content">
       <?php if(isset($breadcrumbs)): ?>
-      <div class="breadcrumb">
+      <div class="breadcrumb screen-only">
         <div class="breadcrumb-item">
           <a href="./">Home</a>
         </div>
