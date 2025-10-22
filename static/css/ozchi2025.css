@@ -260,7 +260,7 @@ h1, h2, h3, h4 {
     font-family: "Gabarito", sans-serif;
 }
 
-main a {
+main a:not(.nav-link) {
     border-bottom: 1px dotted;
 }
 
